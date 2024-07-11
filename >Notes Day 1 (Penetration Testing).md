@@ -49,8 +49,12 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 ```
 # Lecture
 ### Penetration testing overview
-* bruh
-  - bruh
+* Phase 1: Mission Definition
+* Phase 2: Recon
+* Phase 3: Footprinting
+* Phase 4: Exmploitation/Initial Access
+* Phase 5: Post-Exploitation
+* Phase 6: Document Mission
 
 
 
