@@ -48,6 +48,7 @@ ssh -S /tmp/t1 dummy -O forward -L5555:192.168.50.100:22
 ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 ```
 # Lecture
+## Pen-Testing
 #### Penetration testing overview
 * Phase 1: Mission Definition
 * Phase 2: Recon
@@ -63,6 +64,42 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 * Operational Concerns
   - Offensive
   - Defensive
+## Network Reconaissance
+#### Scraping Data
+```
+pip install lxml requests
+```
+```
+#!/usr/bin/python
+import lxml.html
+import requests
+
+page = requests.get('http://quotes.toscrape.com')
+tree = lxml.html.fromstring(page.content)
+
+authors = tree.xpath('//small[@class="author"]/text()')
+
+print ('Authors: ',authors)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
