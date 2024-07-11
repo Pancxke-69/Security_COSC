@@ -145,10 +145,34 @@ nmap --script=http-enum 192.168.28.100
 ```
 proxychains nmap 192.168.28.97,100,98,99,105,111,120 -p 21 --open 2>/dev/null
 ```
-`192.168.28.105 has ftp open`
+`192.168.28.105 has ftp open
+
+PORT     STATE SERVICE
+21/tcp   open  ftp
+23/tcp   open  telnet
+2222/tcp open  EtherNetIP-1
+
+`
+
+for i in {225..254}; do (ping -c 1 192.168.150.$i | grep "bytes from" &) ; done
+64 bytes from 192.168.150.225: icmp_seq=1 ttl=64 time=0.811 ms
+64 bytes from 192.168.150.226: icmp_seq=1 ttl=63 time=1.68 ms
+64 bytes from 192.168.150.227: icmp_seq=1 ttl=63 time=2.31 ms
 
 
+proxychains nmap -T4 192.168.28.97,100,98,99,105,111,120 -p80 --open
 
+Nmap scan report for 192.168.28.100
+Host is up (0.0015s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 192.168.28.111
+Host is up (0.00100s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
 
 
 
