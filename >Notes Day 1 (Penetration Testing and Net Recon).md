@@ -112,7 +112,9 @@ Authors:  ['Albert Einstein', 'J.K. Rowling', 'Albert Einstein', 'Jane Austen', 
 ```
 #### Script Management
 Scripts are stored in a subdirectory of the Nmap data directory by default: `/usr/share/nmap/scripts`
-
+```
+nmap --script=http-enum 192.168.28.100
+```
 
 
 
