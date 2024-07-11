@@ -115,6 +115,7 @@ Scripts are stored in a subdirectory of the Nmap data directory by default: `/us
 ```
 nmap --script=http-enum 192.168.28.100
 ```
+* Enumerates the directories and files on a web server
 
 
 
