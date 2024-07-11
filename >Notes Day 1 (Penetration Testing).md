@@ -55,7 +55,14 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 * Phase 4: Exmploitation/Initial Access
 * Phase 5: Post-Exploitation
 * Phase 6: Document Mission
-
+##### Write a formal report
+* Opnotes
+* Formalized Report
+  - Executive Summary
+  - Technical Summary
+* Operational Concerns
+  - Offensive
+  - Defensive
 
 
 
