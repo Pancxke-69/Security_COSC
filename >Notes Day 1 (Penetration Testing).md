@@ -47,7 +47,10 @@ ssh -MS /tmp/t1 student@127.0.0.1 -p 4444
 ssh -S /tmp/t1 dummy -O forward -L5555:192.168.50.100:22
 ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 ```
-
+# Lecture
+### Penetration testing overview
+* bruh
+  - bruh
 
 
 
