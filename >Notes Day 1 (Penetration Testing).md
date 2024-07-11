@@ -130,9 +130,14 @@ Not shown: 999 closed ports
 PORT   STATE SERVICE
 53/tcp open  domain
 ```
-
-
-
+# Master Socket Command
+```
+ssh -MS /tmp/t1 student@127.0.0.1 -p 4444
+```
+# Cancel a socket
+```
+ssh -S /tmp/jump dummy -O cancel <PORT>:<IP>:<PORT>
+```
 
 
 
