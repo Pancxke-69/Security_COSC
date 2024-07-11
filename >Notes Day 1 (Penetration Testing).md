@@ -27,7 +27,7 @@ ssh -S /tmp/jump dummy -O forward -D9050
 ```
 for i in {1..254}; do (ping -c 1 192.168.65.$i | grep "bytes from" &) ; done
 ```
-* Output
+Output:
 64 bytes from 192.168.65.2: icmp_seq=1 ttl=64 time=1.95 ms
 64 bytes from 192.168.65.1: icmp_seq=1 ttl=64 time=1.12 ms
 64 bytes from 192.168.65.8: icmp_seq=1 ttl=64 time=1.58 ms
