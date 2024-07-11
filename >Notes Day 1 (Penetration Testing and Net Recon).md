@@ -81,7 +81,10 @@ authors = tree.xpath('//small[@class="author"]/text()')
 
 print ('Authors: ',authors)
 ```
-
+OUTPUTS:
+```
+Authors:  ['Albert Einstein', 'J.K. Rowling', 'Albert Einstein', 'Jane Austen', 'Marilyn Monroe', 'Albert Einstein', u’Andr\xe9 Gide', 'Thomas A. Edison', 'Eleanor Roosevelt', 'Steve Martin']
+```
 
 
 
