@@ -48,6 +48,7 @@ ssh -S /tmp/t1 dummy -O forward -L5555:192.168.50.100:22
 ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 ```
 # Lecture
+
 ## Pen-Testing
 #### Penetration testing overview
 * Phase 1: Mission Definition
