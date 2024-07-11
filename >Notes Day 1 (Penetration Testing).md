@@ -52,6 +52,7 @@ ssh -S /tmp/jump dummy -O forward -L1111:192.168.28.111:80 -L2222:192.168.28.100
 proxychains nmap 192.168.28.1,2,3,97,98,99,100,105,111,120,129,130,131
 ```
 OUTPUT:
+```
 Nmap scan report for 192.168.28.1
 Host is up (0.00037s latency).
 All 1000 scanned ports on 192.168.28.1 are closed
@@ -128,7 +129,7 @@ Host is up (0.00044s latency).
 Not shown: 999 closed ports
 PORT   STATE SERVICE
 53/tcp open  domain
-
+```
 
 
 
