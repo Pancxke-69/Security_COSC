@@ -1,6 +1,3 @@
-http://10.50.26.140/classinfo.html
-
-
 # Username
 ```
 JOHU-503-M
@@ -13,7 +10,7 @@ z3rO0sdmpFsRyRR
 ```
 10.50.30.50
 ```
-CTFD - http://10.50.20.30:8000
+# CTFD - http://10.50.20.30:8000
 # Stack Number - 13
 # Multiplexing command
 ```
