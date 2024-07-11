@@ -106,7 +106,7 @@ print ('Authors: ',authors)
 * Things to change in the script
   - URL
   - xpath query
-OUTPUTS:
+###### OUTPUTS:
 ```
 Authors:  ['Albert Einstein', 'J.K. Rowling', 'Albert Einstein', 'Jane Austen', 'Marilyn Monroe', 'Albert Einstein', u’Andr\xe9 Gide', 'Thomas A. Edison', 'Eleanor Roosevelt', 'Steve Martin']
 ```
