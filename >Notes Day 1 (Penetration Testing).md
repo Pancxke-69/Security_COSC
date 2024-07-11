@@ -32,7 +32,7 @@ for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &) ; done
 ```
 ssh -S /tmp/jump dummy -O cancel <PORT>:<IP>:<PORT>
 ```
-# Exmaple Commands
+# Example Commands
 ```
 ssh -MS /tmp/jump student@10.50.39.25
 ssh -S /tmp/jump dummy -O forward -D9050
