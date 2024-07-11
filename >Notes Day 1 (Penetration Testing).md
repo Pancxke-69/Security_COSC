@@ -36,3 +36,7 @@ Output:
 64 bytes from 192.168.65.20: icmp_seq=1 ttl=64 time=0.016 ms
 64 bytes from 192.168.65.30: icmp_seq=1 ttl=64 time=0.104 ms
 ```
+# Tunnel Example
+```
+ssh -S /tmp/jump dummy -O forward -L1111:IP:80 -L2222:IP:80
+```
