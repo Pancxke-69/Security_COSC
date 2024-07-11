@@ -11,6 +11,10 @@ z3rO0sdmpFsRyRR
 ```
 10.50.30.50
 ```
+### Lin-Ops
+```
+10.50.30.231
+```
 ### Stack Number - 13
 ### Multiplexing command
 ```
@@ -119,21 +123,29 @@ nmap --script=http-enum 192.168.28.100
 
 
 # CTF Notes
-### Reconaissance
+## Reconaissance
 * Network scan `192.168.28.96/27`
 * Network scan `192.168.150.224/27`
 * Known URL: `consulting.site.donavia`
+
+
+
+## Exploit and Research
+### OUTPUT FROM RUBY PING SWEEP:
 ```
-
+64 bytes from 192.168.28.97: icmp_seq=1 ttl=64 time=6.51 ms
+64 bytes from 192.168.28.100: icmp_seq=1 ttl=63 time=2.83 ms
+64 bytes from 192.168.28.98: icmp_seq=1 ttl=63 time=5.92 ms
+64 bytes from 192.168.28.99: icmp_seq=1 ttl=63 time=4.69 ms
+64 bytes from 192.168.28.105: icmp_seq=1 ttl=63 time=0.430 ms
+64 bytes from 192.168.28.111: icmp_seq=1 ttl=63 time=0.721 ms
+64 bytes from 192.168.28.120: icmp_seq=1 ttl=63 time=0.431 ms
 ```
-
-
-
-### Exploit and Research
+#### NMAP Command filters on port 21
 ```
-
+proxychains nmap 192.168.28.97,100,98,99,105,111,120 -p 21 --open 2>/dev/null
 ```
-
+`192.168.28.105 has ftp open`
 
 
 
