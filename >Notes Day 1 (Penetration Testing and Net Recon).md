@@ -50,17 +50,6 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 # Lecture
 
 ## Pen-Testing
-
-
-
-
-
-
-
-
-
-
-
 #### Penetration testing overview
 * Phase 1: Mission Definition
 * Phase 2: Recon
@@ -76,6 +65,8 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 * Operational Concerns
   - Offensive
   - Defensive
+
+ 
 ## Reconaissance
 ##### Example HTML Page - http://10.50.24.160/webexample/htmldemo.html
 HTML Code from above link:
@@ -112,6 +103,9 @@ authors = tree.xpath('//small[@class="author"]/text()')
 
 print ('Authors: ',authors)
 ```
+* Things to change in the script
+  - URL
+  - xpath query
 OUTPUTS:
 ```
 Authors:  ['Albert Einstein', 'J.K. Rowling', 'Albert Einstein', 'Jane Austen', 'Marilyn Monroe', 'Albert Einstein', u’Andr\xe9 Gide', 'Thomas A. Edison', 'Eleanor Roosevelt', 'Steve Martin']
