@@ -3,17 +3,21 @@
 ```
 JOHU-503-M
 ```
-### Password
-```
-z3rO0sdmpFsRyRR
-```
 ### jumpbox
 ```
 10.50.30.50
 ```
+#### Password
+```
+z3rO0sdmpFsRyRR
+```
 ### Lin-Ops
 ```
 10.50.30.231
+```
+#### Password
+```
+password
 ```
 ### Stack Number - 13
 ### Multiplexing command
