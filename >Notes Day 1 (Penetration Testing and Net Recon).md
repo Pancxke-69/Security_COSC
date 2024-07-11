@@ -66,7 +66,7 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
   - Defensive
 ## Reconaissance
 ##### Example HTML Page - http://10.50.24.160/webexample/htmldemo.html
-HTML Code:
+HTML Code from above link:
 ```
 <!DOCTYPE html>
 <html>
