@@ -118,7 +118,11 @@ nmap --script=http-enum 192.168.28.100
 * Enumerates the directories and files on a web server
 
 
-
+# CTF Notes
+### Reconaissance
+* Network scan `192.168.28.96/27`
+* Network scan `192.168.150.224/27`
+* Known URL: `consulting.site.donavia`
 
 
 
