@@ -9,7 +9,10 @@ JOHU-503-M
 ```
 z3rO0sdmpFsRyRR
 ```
-Stack Number - 13
-jump - 10.50.30.50
-
+# Stack Number
+13
+# jump
+```
+10.50.30.50
+```
 CTFD - http://10.50.20.30:8000
