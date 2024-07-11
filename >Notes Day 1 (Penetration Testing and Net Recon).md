@@ -64,9 +64,8 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
 * Operational Concerns
   - Offensive
   - Defensive
-## Network Reconaissance
-##### Example HTML Page
-`http://10.50.24.160/webexample/htmldemo.html`
+## Reconaissance
+##### Example HTML Page - http://10.50.24.160/webexample/htmldemo.html
 HTML Code:
 ```
 <!DOCTYPE html>
@@ -106,8 +105,7 @@ OUTPUTS:
 Authors:  ['Albert Einstein', 'J.K. Rowling', 'Albert Einstein', 'Jane Austen', 'Marilyn Monroe', 'Albert Einstein', u’Andr\xe9 Gide', 'Thomas A. Edison', 'Eleanor Roosevelt', 'Steve Martin']
 ```
 #### Script Management
-Scripts are stored in a subdirectory of the Nmap data directory by default:
-`/usr/share/nmap/scripts`
+Scripts are stored in a subdirectory of the Nmap data directory by default: `/usr/share/nmap/scripts`
 
 
 
