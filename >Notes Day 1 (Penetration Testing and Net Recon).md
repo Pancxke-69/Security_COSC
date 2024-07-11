@@ -123,7 +123,16 @@ nmap --script=http-enum 192.168.28.100
 * Network scan `192.168.28.96/27`
 * Network scan `192.168.150.224/27`
 * Known URL: `consulting.site.donavia`
+```
 
+```
+
+
+
+### Exploit and Research
+```
+
+```
 
 
 
