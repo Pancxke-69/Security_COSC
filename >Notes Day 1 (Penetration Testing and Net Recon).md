@@ -65,6 +65,8 @@ ssh -MS /tmp/t2 credentials@127.0.0.1 -p 5555
   - Offensive
   - Defensive
 ## Network Reconaissance
+##### Example HTML Page
+`http://10.50.24.160/webexample/htmldemo.html`
 #### Scraping Data
 `pip install lxml requests`
 ```
