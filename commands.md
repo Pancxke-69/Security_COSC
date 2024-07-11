@@ -1,2 +1,4 @@
 ### Penetration Testing
-`cat /etc | grep bruh`
+```
+cat /etc
+```
