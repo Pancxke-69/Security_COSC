@@ -189,7 +189,9 @@ PORT   STATE SERVICE
 
 # Tunnel Example
 
-`LINOPS		JUMP		T1		T2		T3`
+```
+LINOPS		JUMP		T1		T2		T3
+```
 
 
 `TERMINAL_1>/> ssh -MS /tmp/jump student@<jump_IP>`
