@@ -184,10 +184,41 @@ PORT   STATE SERVICE
   - This adds an option to the Tunnel "jump" ( The option is proxchains )
 * `ssh -S /tmp/jump jump -O forward -L 1111:<IP>:80`
   - This adds a port forward to an IP at port 80 naming it the port 1111
-* `ssh -MS /tmp/t1 billybob@127.0.0.1 -p1111`
+* `ssh -MS /tmp/t1 billybob@127.0.0.1`
   - This creates a new tunnel using the port forward that was created with the tunnel "jump"
 
+# Tunnel Example
 
+`LINOPS		JUMP		T1		T2		T3`
+
+
+`TERMINAL_1>/> ssh -MS /tmp/jump student@<jump_IP>`
+* Creates Tunnel to jump box
+
+`<TERMINAL_2>/> ssh -S /tmp/jump skibidi -O forward -D9050`
+* Creates Dynamic Tunnel (PROXYCHAINS) on the jump box
+`<TERMINAL_2>/> ssh -S /tmp/jump skibidi -O cancel -D9050`
+* Cancels proxychains on the jump box
+`<TERMINAL_2>/> ssh -S /tmp/jump skibidi -O forward -L 1111:<T1>:2222`
+* Creates a forward to "T1" IP on alternate port 2222
+`<TERMINAL_2>/> firefox 127.0.0.1:1111`
+* Opens website from the "T1" box with firefox
+`<TERMINAL_2>/> ssh -MS /tmp/t1 student@<127.0.0.1> -p 1111`
+* Creates a New tunnel using the loopback and connects to the port forward that we made above
+
+`<TERMINAL_3>/> ssh -S /tmp/t1 stupid -O forward -D9050`
+* Creates proxychains on t1
+`<TERMINAL_3>/> ssh -S /tmp/t1 stupid -O cancel -D9050`
+* Cancels proxychains on t1
+`<TERMINAL_3>/> ssh -S /tmp/t1 skibidi -O forward -L 5678:<T2>2222`
+* Creates a forward to "t2" IP on alternate port 2222
+`<TERMINAL_3>/> ssh -MS /tmp/t2 student@<127.0.0.1> -p 5678`
+* Creates a new tunnel using the loopback and connects to the port forward that we made above
+
+`<TERMINAL_4>/> ssh -S /tmp/t2 dumb -O forward -D9050`
+* Creates proxychains on t2
+`<TERMINAL_4>/> ssh -S /tmp/t2 dumb -O forward -L 1234:127.0.0.1:21 `
+* Cancels proxychains on t2
 
 
 
