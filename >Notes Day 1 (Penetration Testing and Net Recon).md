@@ -180,7 +180,7 @@ PORT   STATE SERVICE
 # Tunnels Tunnels and Tunnels
 * `ssh -MS /tmp/jump student@<JUMP>`
   - This makes a tunnel named jump and stores it in /tmp
-* `ssh -S /tmp/jump jump -O forward -p9050`
+* `ssh -S /tmp/jump jump -O forward -D9050`
   - This adds an option to the Tunnel "jump" ( The option is proxchains )
 * `ssh -S /tmp/jump jump -O forward -L 1111:<IP>:80`
   - This adds a port forward to an IP at port 80 naming it the port 1111
