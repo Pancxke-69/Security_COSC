@@ -1,5 +1,4 @@
-# ♫ ♫ ♫ ♫ ♫
-# Assembly Code
+# Assembly Code ♫ ♫ ♫ ♫ ♫
 * There are 16 General purpose registers
   - %rax - The first return register
   - %rbp - The base pointer that keeps track if the base of the stack
