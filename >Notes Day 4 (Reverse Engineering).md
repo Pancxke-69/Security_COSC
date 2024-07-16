@@ -26,3 +26,8 @@
 * JMP  - Jump to specified location
 * JLE  - Jump if less than or equal
 * JE   - Jump if equal
+### Reverse Engineering Workflow
+* Static - use file, strings, cat the file
+* Behavioral - Seeing how the program works while its running
+* Dissassembly - Debugger
+* Document findings - You document findings 
