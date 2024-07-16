@@ -15,6 +15,14 @@ z3rO0sdmpFsRyRR
 ```
 10.50.30.231
 ```
+### WIN-OPS
+```
+10.50.38.121
+```
+#### XFREERDP COMMAND
+```
+xfreerdp /u:student /v:10.50.38.121 -dynamic-resolution +glyph-cache +clipboard
+```
 #### Password
 ```
 password
