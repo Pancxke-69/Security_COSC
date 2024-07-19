@@ -1,4 +1,0 @@
-### Penetration Testing
-```
-cat /etc
-```
