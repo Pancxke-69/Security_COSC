@@ -1,4 +1,4 @@
-# Lecture
+# Windows
 #### Scheduled Tasks and Services
 * Write Permissions
 * Non-Standard Locactions
@@ -31,3 +31,53 @@ auditpol /get /category:* | findstr /i "success failure"
 * 4720 - Account created
 * 4672 - Adminstrative User logged on
 * 7045 - Service Created
+
+# Linux
+##### Resources
+* [GTFOBins](https://gtfobins.github.io)
+#### Insecure Permissions
+* CRON
+* World-Writable Files and Directories
+* Dot '.' in PATH
+  - Why should you consider it for privilege escalation?
+  - What commands should you run?
+
+#### Vulnerable Software and Services
+#### Unpatched Kernel Vulnerabilities
+## Persistence
+* Adding vs hijacking a user account
+* User account considerations?
+* How should you access it?
+#### User Account Demo
+```
+
+```
+### Boot Process Persistence Demo
+```
+
+```
+### Cron Persistence Demo
+```
+
+```
+### Kernel Module Persistence Demo
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
