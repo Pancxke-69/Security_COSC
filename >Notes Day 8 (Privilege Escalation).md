@@ -112,7 +112,10 @@ cron.!info,!debug
 *.* action(type="omfwd" target="192.168.10.254" port="514" protocol="udp")   # New format
 #mail.*
 ```
-
+# CTF
+```
+watch -n1 'ls -l'
+```
 
 
 
