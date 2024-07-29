@@ -2,14 +2,17 @@
 * Ping Sweep
 * Navigate any webpage you see
 * `cat /etc/hosts`
-* `cat /etc/rsyslog.conf`
 * `sudo -l`
 * Enumerating world writeable directories
 * Check for SUID/SGID binaries on the system
 * `ps -elf`
 * `ip a`
 * `ss -ntlp`
-* 
+* `cat /etc/*release`
+* `cat /var/spool/cron/crontab`
+* `cat /etc/crontab`
+* `id`
+* `whoami`
 #### Web Ex
 * SQL Injection
   - `OR 1=1` to test which selection is vulnerable
@@ -22,16 +25,13 @@
   - `Whoami`
   - Semicolons before commands
 #### Reverse Engineering
-* 
-#### Exploit
-*
-#### Post
-*
+#### Exploit Dev
+#### Post Ex
+* Remote Logging
+* `cat /etc/rsyslog.conf`
+* Check for other security products
 #### Win Exp
-*
+* Exe Replacement
+* DLL Replacement
+* Auditpol
 #### Lin Exp
-*
-#### Dev
-*
-#### Ex
-*
