@@ -12,3 +12,12 @@ s.send(buffer)
 print s.recv(1024)
 s.close()
 ```
+### Netcat TCP Scan (Singular IP)
+```
+#!/bin/bash
+echo "Enter network address (e.g. 192.168.0.1): "
+read net
+echo "Enter ports space-delimited (e.g. 21-23 80): "
+read ports
+nc -nvzw1 $net $ports 2>&1 | grep -E 'succ|open'
+```
